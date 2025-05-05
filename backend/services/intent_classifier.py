@@ -12,7 +12,7 @@ Intent = Literal[
     "compatibility_check", "order_status", "off_topic", "small_talk"
 ]
 
-co = cohere.Client("dh2DjHysTfoxViTn8w0LMEZJOWtmBT8IDtKugCkT")
+co = cohere.Client("api_key")
 
 EXAMPLES = [
     ClassifyExample(text="Is part number PS11752778 compatible with Whirlpool WDT780SAEM1?", label="compatibility_check"),
