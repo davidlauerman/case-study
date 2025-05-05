@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("DEEPSEEK_API_KEY")
 
-client = OpenAI(api_key="sk-591d577127ee419981f66972d1cb0590", base_url="https://api.deepseek.com")
+client = OpenAI(api_key="api_key", base_url="https://api.deepseek.com")
 
 
 def query_deepseek(user_message: str, context: str, intent: str):

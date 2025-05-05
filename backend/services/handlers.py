@@ -9,15 +9,15 @@ async def handle_compatibility_check(message: str) -> str:
 
 async def handle_install(message: str) -> str:
     # similar to compatibility check, but run through deepseek to extract meaningful information
-    return query_deepseek(message, "", "installation_help")
+    return "install"#query_deepseek(message, "", "installation_help")
 
 async def handle_product_info(message: str) -> str:
     # similar to compatibility check, but run through deepseek to extract meaningful information
-    return query_deepseek(message, "", "product_info")
+    return "product"#query_deepseek(message, "", "product_info")
 
 async def handle_troubleshooting(message: str) -> str:
     # run message through LLM + RAG / predefined troubleshooting workflows
-    return query_deepseek(message, "","troubleshooting")
+    return "troubleshoot"#query_deepseek(message, "","troubleshooting")
 
 async def handle_order_status(message: str) -> str:
     # Link to order status API or service
