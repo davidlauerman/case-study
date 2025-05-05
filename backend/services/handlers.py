@@ -8,11 +8,11 @@ async def handle_compatibility_check(message: str) -> str:
     return "Let me check if that part is compatible with your model..."
 
 async def handle_install(message: str) -> str:
-    # similar to compatibility check, but run through deepseek to extrace meaningful information
+    # similar to compatibility check, but run through deepseek to extract meaningful information
     return query_deepseek(message, "", "installation_help")
 
 async def handle_product_info(message: str) -> str:
-    # similar to compatibility check, but run through deepseek to extrace meaningful information
+    # similar to compatibility check, but run through deepseek to extract meaningful information
     return query_deepseek(message, "", "product_info")
 
 async def handle_troubleshooting(message: str) -> str:

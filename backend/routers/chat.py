@@ -8,7 +8,6 @@ router = APIRouter()
 @router.post("/chat", response_model=ChatResponse)
 async def chat_handler(req: ChatRequest):
     intent = await classify_intent(req.message)
-
     if intent == "compatibility_check":
         message = await handle_compatibility_check(req.message)
     elif intent == "installation_help":

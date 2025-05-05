@@ -21,7 +21,7 @@ def query_deepseek(user_message: str, context: str, intent: str):
         {"role": "system", "content": prompt},
         {"role": "user", "content": user_message},
     ],
-    max_tokens=248,
+    max_tokens=124,
     temperature=1.25,
     stream=False
 )
